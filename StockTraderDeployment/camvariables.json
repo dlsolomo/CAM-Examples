@@ -1,0 +1,61 @@
+{
+  "input_datatypes": [ ],
+  "input_namespaces": [ ],
+  "output_namespace": "",
+  "input_groups": [
+    {
+      "name": "Other-null_resource.configure_database",
+      "label": "Other - null_resource.configure_database"
+    },
+    {
+      "name": "null_resource_provisioner",
+      "label": "null_resource Provisioner"
+    }
+  ],
+  "output_groups": [ ],
+  "template_input_params": [
+    {
+      "name": "configure_database_connection_user",
+      "label": "Configure Database Connection User",
+      "description": "Configure Database Connection User",
+      "type": "string",
+      "default": "db2inst1",
+      "validation": "",
+      "group_name": "Other-null_resource.configure_database",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "configure_database_connection_password",
+      "label": "Configure Database Connection Password",
+      "description": "Configure Database Connection Password",
+      "type": "string",
+      "default": "IBMDem0s!",
+      "validation": "",
+      "group_name": "Other-null_resource.configure_database",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "configure_database_connection_host",
+      "label": "Configure Database Connection Host",
+      "description": "Configure Database Connection Host",
+      "type": "string",
+      "default": "$DB2Node01_ip",
+      "validation": "",
+      "group_name": "Other-null_resource.configure_database",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    }
+  ],
+  "template_output_params": [ ]
+}
